@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import './ChatApp.css'; 
 
 const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"];
@@ -32,11 +34,15 @@ const ChatApp = () => {
       <div className="chat-messages">
         {messages.map((message, index) => (
           <div key={index} className="message">
-            <span className="user">{message.user}</span>
-            <span className="text">{message.text}</span>
-            <button className="like-btn" onClick={() => handleLikeClick(index)}>
-              Like ({message.likes})
-            </button>
+            <div className="user-badge">{message.user.charAt(0)}</div>
+            <div className="user">{message.user}</div>
+            <div className="message-content">
+              {/* <div className="user">{message.user}</div> */}
+              <div className="text">{message.text}</div>
+              <button className="like-btn" onClick={() => handleLikeClick(index)}>
+              <FontAwesomeIcon icon={faThumbsUp} /> <span>{message.likes}</span>
+              </button>
+            </div>
           </div>
         ))}
       </div>

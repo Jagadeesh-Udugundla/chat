@@ -1,6 +1,7 @@
 .chat-container {
     display: flex;
     flex-direction: column;
+    background-color: gray;
     height: 100vh;
   }
   
@@ -11,7 +12,27 @@
   }
   
   .message {
+    display: flex;
     margin-bottom: 10px;
+  }
+  
+  .user-badge {
+    background-color: pink;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .message-content {
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
   }
   
   .user {
