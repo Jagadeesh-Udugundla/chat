@@ -1,3 +1,7 @@
+![image](https://github.com/Jagadeesh-Udugundla/chat/assets/97141186/62b48a32-56d4-4ca0-a6d1-d15b6a6a4277)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
